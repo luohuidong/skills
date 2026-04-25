@@ -1,0 +1,50 @@
+---
+name: markdown-style-rules
+description: 当涉及编写 Markdown 文档时，触发这个SKILL，获取 Markdown 文档需要遵循的规范
+---
+
+# Markdown Style Rules
+
+## 图表
+
+- 图表优先使用 Mermaid 绘制，Mermaid 无法表达时使用 ASCII 图
+- 当使用 Mermaid 图时，使用默认的配色即可，因为要兼容 light mode 跟 dark mode 这两种模式的显示效果。
+
+## 标题
+
+- 标题前面不能添加分割线（`---` 或 `***`）
+- 标题深度不超过 H6，且必须使用连续的标题级别（即不能直接从 H1 跳到 H6）
+
+## 列表
+
+- 列表周围必须有空行，如：
+
+  ```markdown
+  balabala：
+
+  - list item 1
+  - list item 2
+
+  balabala
+  ```
+
+## Code Block
+
+- 如果 code block 是纯文本内容，language 应该设置为 `plaintext`。
+- code block 周围必须有空行，如：
+
+  ````markdown
+  balabala：
+
+  ```plaintext
+  some code here
+  ```
+
+  balabala
+  ````
+
+## 关于强调文字的 `**` 使用规范
+
+- 使用 `**` 强调文字的时候，如果强调文字左右都有其他文字，则需要使用空格将强调文字与其他文字隔开。例如，`理解 **认证** 的概念`，而不是 `理解**认证**的概念`。
+- `**` 仅可用于强调文字，不可用于其他用途，例如用来做小节标题。
+- 不要滥用强调文字，只有在必要的情况下才使用 `**` 来强调文字，过度使用会降低强调的效果，反而让读者觉得没有重点。
