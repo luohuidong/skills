@@ -1,8 +1,9 @@
 #!/bin/bash
 
-pnpm dlx skills add luohuidong/skills
-pnpm dlx skills add vercel-labs/agent-skills --skill vercel-react-best-practices
-pnpm dlx skills add vercel-labs/next-skills --skill next-best-practices
-pnpm dlx skills add vercel/ai
-pnpm dlx skills add vercel/ai-elements
-pnpm dlx skills add shadcn/ui
+bunx skills add luohuidong/skills
+bunx skills add vercel-labs/agent-skills --skill vercel-react-best-practices
+bunx skills add vercel-labs/next-skills --skill next-best-practices
+bunx skills add vercel/ai
+bunx skills add vercel/ai-elements
+bunx skills add shadcn/ui
+bunx skills add obra/superpowers
